@@ -6,19 +6,15 @@
     <id>http://www.zotero.org/styles/gde</id>
     <!-- <link href="http://www.zotero.org/styles/apa" rel="self"/> -->
     <author>
-      <name>Simon Kornblith</name>
-      <email>simon@simonster.com</email>
-    </author>
-    <contributor>
       <name>Manuel S. Hubacher</name>
-    </contributor>
+    </author>
     <category citation-format="author-date"/>
     <category field="history"/>
     <category field="generic-base"/>
     <updated>2016-09-28T13:09:49+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
-  <summary>Citation style for the series "Geschichtsdidaktik heute". This style is based on the APA style (6th edition).</summary>
+  <summary>Citation style for the series "Geschichtsdidaktik heute". This style is mostly based on the APA style (6th edition).</summary>
   <locale xml:lang="de">
     <terms>
       <term name="et-al">et&#160;al.</term>
@@ -59,7 +55,7 @@
   </macro>
   <macro name="author">
     <names variable="author">
-      <name name-as-sort-order="all" and="symbol" sort-separator=", " initialize="false" initialize-with=". " delimiter="; " delimiter-precedes-last="never"/>
+      <name name-as-sort-order="all" and="symbol" sort-separator=", " initialize="false" initialize-with=". " delimiter="/" delimiter-precedes-last="never"/>
       <label form="short" prefix=" (" suffix=")" text-case="capitalize-first"/>
       <substitute>
         <names variable="editor"/>
@@ -601,7 +597,7 @@
       <key macro="author"/>
       <key macro="issued-sort"/>
     </sort>
-    <layout prefix="(" suffix=")" delimiter="; ">
+    <layout prefix="(" suffix=")" delimiter="/">
       <group delimiter=", ">
         <text macro="author-short"/>
         <text macro="issued-year"/>
