@@ -29,7 +29,7 @@
             <name and="symbol" initialize="false" initialize-with=". " delimiter=", "/>
             <label form="short" prefix=" (" text-case="title" suffix=")"/>
           </names>
-          <names variable="editor translator" delimiter=", ">
+          <names variable="editor translator" delimiter="/">
             <name and="symbol" initialize="false" initialize-with=". "/>
             <label form="short" prefix=" (" text-case="title" suffix=")"/>
           </names>
