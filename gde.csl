@@ -25,12 +25,12 @@
     <choose>
       <if type="chapter paper-conference entry-dictionary entry-encyclopedia" match="any">
         <group delimiter=", ">
-          <names variable="container-author" delimiter=", ">
-            <name and="symbol" initialize="false" initialize-with=". " delimiter=", "/>
+          <names variable="container-author" delimiter="/">
+            <name and="symbol" delimiter-precedes-last="never" initialize="false" initialize-with=". " delimiter=", "/>
             <label form="short" prefix=" (" text-case="title" suffix=")"/>
           </names>
           <names variable="editor translator" delimiter="/">
-            <name and="symbol" initialize="false" initialize-with=". "/>
+            <name and="symbol" delimiter-precedes-last="never" initialize="false" initialize-with=". "/>
             <label form="short" prefix=" (" text-case="title" suffix=")"/>
           </names>
         </group>
