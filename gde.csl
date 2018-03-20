@@ -4,21 +4,20 @@
     <title>Geschichtsdidaktik empirisch</title>
     <title-short>GDE</title-short>
     <id>http://www.zotero.org/styles/gde</id>
-    <!-- <link href="http://www.zotero.org/styles/apa" rel="self"/> -->
     <author>
       <name>Manuel S. Hubacher</name>
     </author>
     <category citation-format="author-date"/>
     <category field="history"/>
     <category field="generic-base"/>
-    <summary>Citation style for the series "Geschichtsdidaktik heute". This style is mostly based on the APA style (6th edition).</summary>
-    <updated>2016-09-28T13:09:49+00:00</updated>
+    <summary>Citation style for the series &quot;Geschichtsdidaktik heute&quot;. This style is mostly based on the APA style (6th edition).</summary>
+    <updated>2018-03-20T09:06:10+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="de">
     <terms>
-      <term name="et-al">et&#160;al.</term>
-       <term name="forthcoming">i.&#160;E.</term>
+      <term name="et-al">et al.</term>
+      <term name="forthcoming">i. E.</term>
     </terms>
   </locale>
   <macro name="container-contributors">
@@ -191,7 +190,6 @@
             </group>
           </if>
           <else>
-            <!-- assume `title` is title of reviewed work -->
             <group delimiter=", " prefix="[" suffix="]">
               <text variable="title" font-style="italic" prefix="Review of "/>
               <names variable="reviewed-author" delimiter=", ">
@@ -270,7 +268,6 @@
         <group delimiter=", ">
           <choose>
             <if variable="event version" type="speech motion_picture" match="none">
-              <!-- Including version is to avoid printing the programming language for computerProgram /-->
               <text variable="genre"/>
             </if>
           </choose>
@@ -423,7 +420,6 @@
           <text variable="page"/>
         </group>
         <choose>
-          <!--for advanced online publication-->
           <if variable="issued">
             <choose>
               <if variable="page issue" match="none">
@@ -443,7 +439,6 @@
         <group prefix=" (" suffix=")" delimiter=", ">
           <choose>
             <if type="report" match="none">
-              <!-- edition for report is included in title-plus-extra /-->
               <text macro="edition"/>
             </if>
           </choose>
@@ -457,7 +452,7 @@
             <else>
               <group>
                 <text term="volume" form="short" plural="true" text-case="capitalize-first" suffix=" "/>
-                <number variable="number-of-volumes" form="numeric" prefix="1&#8211;"/>
+                <number variable="number-of-volumes" form="numeric" prefix="1–"/>
               </group>
             </else>
           </choose>
@@ -472,7 +467,6 @@
           <text variable="authority"/>
           <choose>
             <if variable="container-title" match="any">
-              <!--Only print year for cases published in reporters-->
               <date variable="issued" form="numeric" date-parts="year"/>
             </if>
             <else>
@@ -538,7 +532,6 @@
               <text variable="volume"/>
               <text variable="container-title"/>
               <group delimiter=" ">
-                <!--change to label variable="section" as that becomes available -->
                 <text term="section" form="symbol"/>
                 <text variable="section"/>
               </group>
@@ -554,10 +547,8 @@
         <group delimiter=", " prefix=", ">
           <choose>
             <if variable="number">
-              <!--There's a public law number-->
               <text variable="number" prefix="Pub. L. No. "/>
               <group delimiter=" ">
-                <!--change to label variable="section" as that becomes available -->
                 <text term="section" form="symbol"/>
                 <text variable="section"/>
               </group>
@@ -571,7 +562,6 @@
               <group delimiter=" ">
                 <text variable="volume"/>
                 <text variable="container-title"/>
-                <!--change to label variable="section" as that becomes available -->
                 <text term="section" form="symbol"/>
                 <text variable="section"/>
               </group>
@@ -585,7 +575,6 @@
     <choose>
       <if variable="original-date">
         <group prefix="(" suffix=")" delimiter=" ">
-          <!---This should be localized-->
           <text value="Original erschienen"/>
           <date variable="original-date" form="text"/>
         </group>
@@ -597,7 +586,7 @@
       <key macro="author"/>
       <key macro="issued-sort"/>
     </sort>
-    <layout prefix="(" suffix=")" delimiter="/">
+    <layout delimiter="; " prefix="(" suffix=")">
       <group delimiter=", ">
         <text macro="author-short"/>
         <text macro="issued-year"/>
