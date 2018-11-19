@@ -26,11 +26,11 @@
       <if type="chapter paper-conference entry-dictionary entry-encyclopedia" match="any">
         <group delimiter=", ">
           <names variable="container-author" delimiter="/">
-            <name and="symbol" delimiter-precedes-last="never" initialize="false" initialize-with=". " delimiter=", "/>
+            <name and="symbol" delimiter-precedes-last="never" initialize="false" delimiter="/"/>
             <label form="short" prefix=" (" text-case="title" suffix=")"/>
           </names>
           <names variable="editor translator" delimiter="/">
-            <name and="symbol" delimiter-precedes-last="never" initialize="false" initialize-with=". "/>
+            <name and="symbol" delimiter-precedes-last="never" initialize="false"/>
             <label form="short" prefix=" (" text-case="title" suffix=")"/>
           </names>
         </group>
