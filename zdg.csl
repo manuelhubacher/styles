@@ -14,7 +14,7 @@
     <category field="social_science"/>
     <category field="humanities"/>
     <summary>Stil für die ZDG herausgegeben vom Wochenschau Verlag.</summary>
-    <updated>2019-09-04T10:02:07+00:00</updated>
+    <updated>2019-09-28T14:20:18+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale>
@@ -31,13 +31,13 @@
   </locale>
   <macro name="editor">
     <names variable="editor" delimiter=", ">
-      <name font-style="normal" delimiter="und" prefix=" " suffix=" " delimiter-precedes-last="always" et-al-min="1" et-al-use-first="2" name-as-sort-order="all"/>
+      <name font-style="normal" delimiter="und " prefix="" suffix=" " delimiter-precedes-last="always" et-al-min="1" et-al-use-first="2" name-as-sort-order="all"/>
       <label form="short" prefix=" (" text-case="capitalize-first" suffix=")"/>
     </names>
   </macro>
   <macro name="author">
     <names variable="author">
-      <name font-style="normal" delimiter="und" prefix=" " suffix=" " delimiter-precedes-et-al="never" delimiter-precedes-last="always" et-al-min="2" et-al-use-first="1" initialize="false" initialize-with=". " name-as-sort-order="all"/>
+      <name font-style="normal" delimiter="und " prefix="" suffix=" " delimiter-precedes-et-al="never" delimiter-precedes-last="always" et-al-min="2" et-al-use-first="1" initialize="false" initialize-with=". " name-as-sort-order="all"/>
       <label form="short" prefix=" (" suffix=")" text-case="capitalize-first"/>
       <substitute>
         <names variable="editor"/>
